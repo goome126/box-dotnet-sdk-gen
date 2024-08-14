@@ -18,6 +18,12 @@ namespace Box.Sdk.Gen.Schemas {
         public string? Email { get; init; }
 
         /// <summary>
+        /// Name of the signer
+        /// </summary>
+        [JsonPropertyName("label")]
+        public string? Label { get; init; }
+
+        /// <summary>
         /// Defines the role of the signer in the signature request. A role of
         /// `signer` needs to sign the document, a role `approver`
         /// approves the document and
